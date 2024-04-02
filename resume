@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Miguel Mendez} \\ \vspace{1pt}
+    \small 469-463-6640 $|$ \href{mailto:MiguelMendez1208@gmail.com}{\underline{MiguelMendez1208@gmail.com}} $|$ 
+    \href{http://www.linkedin.com/in/mendez-miguel}{\underline{linkedin.com/in/mendez-miguel}} $|$
+    \href{https://github.com/miguelmendez1208}{\underline{github.com/miguelmendez1208}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Blockchain Software Engineer Apprentice}{Sep. 2023 -- Dec. 2023}
+      {Byte Masons}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Participated in a blockchain apprenticeship, gaining hands-on experience with smart contract development and Web3 front-end development}
+        \resumeItem{Developed a front-end website to interact with concentrated liquidity compounder smart contracts using React, Foundry, Web3modal, Ethers.js, Typescript, Solidity, and Bun}
+        \resumeItem{Hosted at: \href{https://nuked-defi.vercel.app/}{nuked-defi.vercel.app}}
+
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Software Engineer}{Sep. 2022 -- Current.}
+      {Values Cart}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the role of Scrum Master for a team of 5, enhancing team agility and project efficiency through effective sprint coordination.}
+        \resumeItem{Designed and implemented a MySQL database on Azure to store corporate brand data, integrating geographic and political affiliations, significantly improving data accessibility.}
+        \resumeItem{Developed advanced algorithms to iterate through the database and assign scores to corporations based on multiple data points}
+        \resumeItem{Developed the backend for Values Cart's web reputation system, aligning customer spending on Amazon with their ethical/political beliefs. Optimized database queries, cutting latency by 90\%—from 10 seconds to 0.5 seconds per average query.}
+        \resumeItem{Programmed a Chrome extension using JavaScript, HTML, CSS, Vite and React, expanding the application's user base and functionality}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Scratch Programming Instructor}{Oct. 2019 -- Mar. 2020}
+      {Coding With Kids}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Taught 3rd graders how to code in scratch by implementing lesson plans in a school’s computer lab.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Structures Teacher Assistant}{Aug. 2018 -- Dec. 2018}
+      {University of Redlands}{Redlands, CA}
+      \resumeItemListStart
+        \resumeItem{Graded Computer Science homework for a class of 20 undergraduate data structures students.}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Business Reputation Protocol} $|$ \emph{3rd place at the HackTheChains hackathon}}{Mar. 2024}
+          \resumeItemListStart
+            \resumeItem{Led the development of a decentralized platform for transparent employer reviews, earning 3rd place in a competitive field at the HackTheChains hackathon hosted at Southern Methodist University.}
+            \resumeItem{Engineered a user-friendly frontend website, utilizing React, Foundry, Web3modal, Wagmi, TypeScript, Solidity, and Bun, to facilitate seamless interaction with blockchain-based smart contracts.}
+            \resumeItem{Demonstrated project's functionality and impact at: \href{https://devpost.com/software/business-reputation-protocol}{devpost.com/software/business-reputation-protocol}, highlighting the technical proficiency and collaborative effort of the team.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: HTML, CSS, JavaScript, TypeScript, PHP, SQL, Linux, Python, Java, C/C++, Bash, Solidity } \\
+     \textbf{Frameworks}{: Vue.js, jQuery, React, Next.js, React Server Components, NumPy, Pandas} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, Azure, Google Cloud Platform, Wireshark } \\
+     \textbf{Libraries}{: Node.js, Express.js, Redis, Foundry, Chrome Extension Development, phpMyAdmin}
+    }}
+ \end{itemize}
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at Dallas}{Richardson, TX}
+      {Bachelor of Science in Computer Science}{May 2023}
+    \resumeSubheading
+      {Bcamp}{Online}
+      {Blockchain and solidity smart contract coding boot camp}{June 2023 -- July 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
